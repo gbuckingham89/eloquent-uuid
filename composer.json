@@ -1,9 +1,9 @@
 {
   "name": "gbuckingham89/eloquent-uuid",
   "type": "library",
-  "description": "A simple package for using UUID's with Laravel's Eloquent.",
+  "description": "A simple package for using UUID's (UUID4) with Laravel's Eloquent.",
   "keywords": ["Laravel", "Eloquent", "UUID", "PHP"],
-  "homepage": "https://github.com/gbuckingham89/eloquent-uuid/",
+  "homepage": "https://github.com/gbuckingham89/eloquent-uuid",
   "license": "MIT",
   "authors": [
     {
@@ -13,6 +13,10 @@
       "role": "Developer"
     }
   ],
+  "support": {
+    "issues": "https://github.com/gbuckingham89/eloquent-uuid/issues",
+    "source": "https://github.com/gbuckingham89/eloquent-uuid"
+  },
   "require": {
     "laravel/framework": "^5.3",
     "ramsey/uuid": "^3.5"
