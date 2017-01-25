@@ -32,4 +32,5 @@ trait UuidForKey
             $model->attributes[$model->getKeyName()] = Uuid::uuid4()->toString();
         });
     }
+
 }
