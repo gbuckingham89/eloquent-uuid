@@ -2,7 +2,7 @@
 
 namespace Gbuckingham89\EloquentUuid\Traits;
 
-use Ramsey\Uuid\Uuid;
+use Illuminate\Support\Str;
 
 /**
  * Class UuidForKey
@@ -10,12 +10,13 @@ use Ramsey\Uuid\Uuid;
  */
 trait UuidForKey
 {
+
     /**
      * Stop the model thinking it has an incrementing ID
      *
      * @return bool
      */
-    public function getIncrementing()
+    public function getIncrementing() : bool
     {
         return false;
     }
@@ -29,7 +30,7 @@ trait UuidForKey
     {
         static::creating(function ($model) {
             $model->incrementing = false;
-            $model->attributes[$model->getKeyName()] = Uuid::uuid4()->toString();
+            $model->attributes[$model->getKeyName()] = (string) Str::orderedUuid();
         });
     }
 
