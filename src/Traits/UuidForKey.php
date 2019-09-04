@@ -22,6 +22,16 @@ trait UuidForKey
     }
 
     /**
+     * Get the auto-incrementing key type.
+     *
+     * @return string
+     */
+    public function getKeyType() : string
+    {
+        return 'string';
+    }
+
+    /**
      * Hook into the 'creating' method to set the key to be a UUID
      *
      * @return void
@@ -30,6 +40,7 @@ trait UuidForKey
     {
         static::creating(function ($model) {
             $model->incrementing = false;
+            $model->keyType = 'string';
             $model->attributes[$model->getKeyName()] = (string) Str::orderedUuid();
         });
     }

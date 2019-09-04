@@ -1,8 +1,8 @@
-# gbuckingham89/eloquent-uuid v2
+# gbuckingham89/eloquent-uuid v3.0.0
 
 A simple package for using UUID's with Laravel's Eloquent models. By including the trait on your models, they will autoamtcailly get given a time ordered UUIDv4 for their key (ID) when being persisted to the database.
 
-This package now requires Laravel 5.6+ due to it's use of `Str::orderedUuid()`. *If you're using an older version of Laravel, please see [v1](https://github.com/gbuckingham89/eloquent-uuid/tree/1.0.1) of this package.*
+The current version requires Laravel 5.6 (PHP 7.1) or greater. *If you're using an older version of Laravel, please see [v1](https://github.com/gbuckingham89/eloquent-uuid/tree/1.0.1) of this package.*
 
 ## Installation
 
@@ -32,4 +32,6 @@ At the top of your model(s) you simply need to include a trait:
 
 ## Copyright and license
 
-Code and documentation copyright 2018 [George Buckingham](https://www.georgebuckingham.com). Code released under the [MIT License](https://github.com/gbuckingham89/eloquent-uuid/blob/master/LICENSE).
+Code and documentation copyright [George Buckingham](https://www.georgebuckingham.com). 
+
+Code released under the [MIT License](https://github.com/gbuckingham89/eloquent-uuid/blob/master/LICENSE).
