@@ -1,4 +1,4 @@
-# gbuckingham89/eloquent-uuid v3.3.0
+# gbuckingham89/eloquent-uuid v3
 
 A simple package for using UUID's with Laravel's Eloquent models. By including the trait on your models, they will automatically get given a time ordered UUIDv4 for their key (ID) when being persisted to the database.
 
